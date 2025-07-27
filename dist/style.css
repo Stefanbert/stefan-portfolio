@@ -6,12 +6,10 @@ body, html {
   background: black;
   color: white;
 }
-
 .split-landing {
   display: flex;
   height: 100vh;
 }
-
 .half {
   flex: 1;
   display: flex;
@@ -22,11 +20,21 @@ body, html {
   color: white;
   transition: background 0.3s;
 }
-
 .left:hover {
   background: #111;
 }
-
 .right:hover {
   background: #222;
+}
+.project-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+.project-gallery img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #333;
 }
