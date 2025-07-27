@@ -1,0 +1,72 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  background: black;
+  color: white;
+}
+.split-landing {
+  display: flex;
+  height: 100vh;
+}
+.half {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s;
+}
+.left:hover {
+  background: #111;
+}
+.right:hover {
+  background: #222;
+}
+.project-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+.project-gallery img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #333;
+}
+.gallery-container {
+  display: flex;
+  overflow-x: scroll;
+  gap: 20px;
+  padding: 40px;
+  scroll-snap-type: x mandatory;
+}
+.gallery-item {
+  flex: 0 0 auto;
+  width: 240px;
+  height: 300px;
+  background: #444;
+  scroll-snap-align: start;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #888;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 6px;
+  font-size: 0.9rem;
+}
+h1 {
+  padding-left: 40px;
+}
